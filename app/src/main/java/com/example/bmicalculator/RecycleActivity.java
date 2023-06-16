@@ -28,21 +28,7 @@ ArrayList<ContactModel> arrContact=new ArrayList<>();
         arrContact.add(new ContactModel(R.drawable.profile,"pritam","Developer"));
         arrContact.add(new ContactModel(R.drawable.profile,"pritam","Developer"));
         arrContact.add(new ContactModel(R.drawable.profile,"pritam","Developer"));
-        arrContact.add(new ContactModel(R.drawable.profile,"pritam","Developer"));
-        arrContact.add(new ContactModel(R.drawable.profile,"pritam","Developer"));
-        arrContact.add(new ContactModel(R.drawable.profile,"pritam","Developer"));
-        arrContact.add(new ContactModel(R.drawable.profile,"pritam","Developer"));
-        arrContact.add(new ContactModel(R.drawable.profile,"pritam","Developer"));
-        arrContact.add(new ContactModel(R.drawable.profile,"pritam","Developer"));
-        arrContact.add(new ContactModel(R.drawable.profile,"pritam","Developer"));
-        arrContact.add(new ContactModel(R.drawable.profile,"pritam","Developer"));
-        arrContact.add(new ContactModel(R.drawable.profile,"pritam","Developer"));
-        arrContact.add(new ContactModel(R.drawable.profile,"pritam","Developer"));
-        arrContact.add(new ContactModel(R.drawable.profile,"pritam","Developer"));
-        arrContact.add(new ContactModel(R.drawable.profile,"pritam","Developer"));
-        arrContact.add(new ContactModel(R.drawable.profile,"pritam","Developer"));
-        arrContact.add(new ContactModel(R.drawable.profile,"pritam","Developer"));
-        arrContact.add(new ContactModel(R.drawable.profile,"pritam","Developer"));
+
 
         RecycleContactAdapter adapter=new RecycleContactAdapter(this,arrContact);
         recyclerView.setAdapter(adapter);
