@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frag1"
+        android:layout_weight="1"
+        android:textSize="@dimen/_21ssp"
+        android:text="Frag1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frag2"
+        android:layout_weight="1"
+        android:textSize="@dimen/_21ssp"
+        android:text="Frag2"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frag3"
+        android:layout_weight="1"
+        android:textSize="@dimen/_21ssp"
+        android:text="Frag3"/>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container"
+
+
+        />
+
+<!--    static Fragment-->
+<!--    <fragment-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/frag1"-->
+<!--        android:name="com.example.bmicalculator.AFragment"-->
+<!--        android:layout_weight="1"/>-->
+<!--    <fragment-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/frag2"-->
+<!--        android:name="com.example.bmicalculator.BFragment"-->
+<!--        android:layout_weight="1"/>-->
+
+
+
+</LinearLayout>
+

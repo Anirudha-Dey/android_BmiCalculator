@@ -3,7 +3,9 @@ package com.example.bmicalculator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -18,19 +20,43 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText editWeight,editHeightFt,editHeightIn;
-        Button calculatorButton,btnNext;
+        EditText editWeight, editHeightFt, editHeightIn;
+        Button calculatorButton, btnNext;
         TextView txtResult;
         LinearLayout linearMain;
 
-        editWeight=findViewById(R.id.editWeight);
-        editHeightIn=findViewById(R.id.editHeightIn);
-        editHeightFt=findViewById(R.id.editHeightFt);
-        calculatorButton=findViewById(R.id.calculatorButton);
-        txtResult=findViewById(R.id.txtResult);
-        linearMain=findViewById(R.id.linearMain);
-        btnNext=findViewById(R.id.btnNext);
-        Log.w("Test","Warning Log");
+        editWeight = findViewById(R.id.editWeight);
+        editHeightIn = findViewById(R.id.editHeightIn);
+        editHeightFt = findViewById(R.id.editHeightFt);
+        calculatorButton = findViewById(R.id.calculatorButton);
+        txtResult = findViewById(R.id.txtResult);
+        linearMain = findViewById(R.id.linearMain);
+        btnNext = findViewById(R.id.btnNext);
+        Log.w("Test", "Warning Log");
+        //database
+//        MyDBHelper dbHelper=new MyDBHelper(this);
+//        dbHelper.addContact("Anirudha","6296582411");
+//        dbHelper.addContact("Ram","9564303139");
+//
+
+        //shared preferences
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                SharedPreferences pref = getSharedPreferences("login", MODE_PRIVATE);
+//                Boolean check = pref.getBoolean("flag", false);
+//                Intent iNext;
+//                if (check) {
+//                    iNext = new Intent(MainActivity.this, ToolBarActivity.class);
+//
+//                } else {
+//                    iNext = new Intent(MainActivity.this, RecycleActivity.class);
+//
+//                }
+//                startActivity(iNext);
+//            }
+//        },4000);
+
         calculatorButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(iNext);
             }
         });
+
+
 
     }
 }

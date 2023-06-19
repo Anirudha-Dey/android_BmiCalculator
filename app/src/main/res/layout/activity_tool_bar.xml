@@ -8,7 +8,7 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -21,6 +21,23 @@
             android:id="@+id/btnDial"
             android:textSize="@dimen/_20ssp"
             />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCameraOpen"
+            android:text="Navigate camera Page"
+            android:textSize="@dimen/_15ssp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnFragment"
+            android:text="Fragment"
+            android:textSize="@dimen/_15ssp"/>
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webView"/>
+
     </com.google.android.material.appbar.AppBarLayout>
 
 

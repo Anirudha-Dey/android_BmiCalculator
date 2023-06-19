@@ -3,4 +3,6 @@
     <string name="hint_wt">Enter Your Weight</string>
     <string name="hint_htF">Enter Your Height(in ft)</string>
     <string name="hint_htI">Enter your Height(in In)</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
